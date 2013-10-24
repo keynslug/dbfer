@@ -4,3 +4,4 @@ erl_crash.dump
 .eunit
 logs
 *.sublime-workspace
+*.dbf
