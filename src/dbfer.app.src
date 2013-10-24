@@ -1,0 +1,10 @@
+{application, dbfer, [
+    {description, "Exporter to dbf format"},
+    {vsn, "0.1"},
+    {registered, []},
+    {applications, [
+        kernel,
+        stdlib
+    ]},
+    {env, []}
+]}.
