@@ -9,6 +9,7 @@
 -export([serialize/3]).
 -export([save/3]).
 -export([save/4]).
+-export([read/1]).
 
 %%
 
@@ -50,6 +51,11 @@ save(Filename, Fields, Records) ->
 
 save(Filename, Fields, Records, Opts) ->
     file:write_file(Filename, serialize(Fields, Records, Opts)).
+
+%%
+
+read(FileName) ->
+    dbfer_decoder:read(FileName).
 
 %%
 
